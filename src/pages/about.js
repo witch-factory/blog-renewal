@@ -1,40 +1,13 @@
 import * as React from 'react'
-import Layout from "../components/layout";
-import Header from "../components/header"
-import Container from "../components/container";
-import {
-  user,
-  avatar,
-  description,
-  username,
-  excerpt,
-} from "./css-modules.module.css"
-
-
-const User=(props)=>{
+import { Link } from 'gatsby'
+const AboutPage = () => {
   return (
-    <div className={user}>
-      <img src={props.avatar} className={avatar} alt=""/>
-      <div className={description}>
-        <h2 className={username}>{props.username}</h2>
-        <p className={excerpt}>{props.excerpt}</p>
-      </div>
-    </div>
+    <main>
+      <title>About Me</title>
+      <h1>About Me</h1>
+      <Link to="/">Back to Home</Link>
+      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+    </main>
   )
 }
-
-const AboutPage=()=>{
-    return (
-        <Container>
-          <Header headerText="About Me"/>
-          <p>such good.</p>
-          <User
-            username="Maria Randall"
-            avatar="https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/docs/tutorial/part-two/pexels-daniel-xavier-1102341.jpg"
-            excerpt="I'm Maria Randall. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-          />
-        </Container>
-    )
-}
-
 export default AboutPage

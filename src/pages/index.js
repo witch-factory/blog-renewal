@@ -1,15 +1,12 @@
 import * as React from 'react'
+import {Link} from 'gatsby'
 import Layout from "../components/layout"
-import {Link} from "gatsby"
-import Header from "../components/header"
-import {StaticImage} from "gatsby-plugin-image"
 
 const IndexPage=()=>{
     return(
-      <div style={{color:`purple`}}>
-        <Link to="/contact/">Contact</Link>
-        <Header headerText="Hello Gatsby!"/>
-      </div>
+      <Layout pageTitle="Home Page">
+        <p>I'm making this by following the Gatsby Tutorial.</p>
+      </Layout>
     )
 }
 
