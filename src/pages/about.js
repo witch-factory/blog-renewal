@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+
 const AboutPage = () => {
   return (
     <main>
@@ -10,4 +11,5 @@ const AboutPage = () => {
     </main>
   )
 }
+
 export default AboutPage
