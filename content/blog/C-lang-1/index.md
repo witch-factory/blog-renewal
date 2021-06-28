@@ -102,7 +102,7 @@ C언어 프로그램의 실행은 언제나 메인함수부터 시작한다. 어
 `main`함수도 함수이므로 `int main(int argc, char* argv[])` 등으로 `main`함수에 인자를 줄 수도 있다. 이런 방식은 나중에 보도록 하자.
 
 `printf("hello, world\n");`
-함수 `printf`에 인자 `"hello, world\n"`을 전달하면서 호출한다. 이때 `printf`는 <stdio.h> 에 포함되어 있는 출력 함수이다.
+함수 `printf`에 인자 `"hello, world\n"`을 전달하면서 호출한다. 이때 `printf`는 `<stdio.h>`에 포함되어 있는 출력 함수이다.
 인자로 받은 format string을 출력하는 것인데, 자세한 내용은 나중에 다루고 지금은 그냥 출력할 것을 인자로 받아서 출력해 주는 함수라고 생각하면 된다.
 
 

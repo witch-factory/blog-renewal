@@ -20,5 +20,12 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins:[],
+        extensions:[`.md`, `.mdx`],
+      },
+    },
   ],
 };
