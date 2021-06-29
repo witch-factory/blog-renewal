@@ -5,10 +5,14 @@ import {MDXRenderer} from "gatsby-plugin-mdx"
 
 const BlogPostTemplate=({data})=>{
   const post=data.mdx
+  const siteTitle=data.site.siteMetadata?.title || `Title`
+  const {prev,next}=data
 
   return(
-    <Layout pageTitle="My Blog Posts">
-      <MDXRenderer>{post.body}</MDXRenderer>
+    <Layout pageTitle={post.frontmatter.title}>
+      <article className="blog-post">
+        <MDXRenderer>{post.body}</MDXRenderer>
+      </article>
     </Layout>
   )
 }

@@ -15,6 +15,7 @@ const Layout=({pageTitle, children})=>{
       site {
         siteMetadata {
           title
+            description
         }
       }
     }  
@@ -37,7 +38,7 @@ const Layout=({pageTitle, children})=>{
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/blog-post" className={navLinkText}>
+            <Link to="/blog" className={navLinkText}>
               Blog
             </Link>
           </li>
