@@ -2,7 +2,19 @@ import React from "react"
 import Layout from "../components/layout"
 import {Link, graphql} from "gatsby"
 
-const BlogPage=({data})=>{
+const BlogIndexPage=({data})=>{
+  const posts=data.allMdx.nodes
+
+  if(posts.length===0){
+    return(
+      <Layout pageTitle="My Blog Posts">
+        <p>
+          no blog posts found.
+        </p>
+      </Layout>
+    )
+  }
+
   return (
   <Layout pageTitle="My Blog Posts">
     <ul>
@@ -27,7 +39,7 @@ const BlogPage=({data})=>{
   )
 }
 
-export default BlogPage
+export default BlogIndexPage
 
 export const query=graphql`
     query BlogPosts {
